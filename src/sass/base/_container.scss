@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+
+  .contacts & {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-color) 6%,
+      var(--background-light-color) 6%,
+      var(--background-light-color) 100%
+    );
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .container {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-color) 10%,
+      var(--background-light-color) 10%,
+      var(--background-light-color) 100%
+    );
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts .container {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-color) 10%,
+      var(--background-light-color) 10%,
+      var(--background-light-color) 100%
+    );
+  }
+}
