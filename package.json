@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://monikajablonska.github.io/ice-cream-5makers",
   "scripts": {
-    "dev": "parcel src/*.html",
+    "dev": "parcel src/*.html --open",
     "build": "parcel build src/*.html --public-url /ice-cream-5makers/"
   },
   "repository": {
