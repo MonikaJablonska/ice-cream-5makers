@@ -1,7 +1,28 @@
 .hero {
+  background-color: var(--background-dark-color);
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
   &__heading {
-    font-family: 'Titan One', cursive;
-    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+  }
+
+  &__heading-accent {
+    font-size: 48px;
+    line-height: 0.965;
     color: var(--accent-color);
+  }
+
+  &__btn-light {
+    padding: 8px 14px;
+    border: 1px solid black;
+    color: var(--accent-color);
+    background-color: var(--light-color);
   }
 }
