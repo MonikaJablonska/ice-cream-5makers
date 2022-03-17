@@ -1,4 +1,5 @@
 .hero {
+  padding-top: 6px;
   background-repeat: no-repeat;
   background-position: right 0 bottom 75px, 0;
   background-image: url(../images/mobile-circle346x344.svg),
@@ -6,7 +7,6 @@
 
   &__container {
     height: 100vh;
-    padding-top: 6px;
     position: relative;
   }
 
