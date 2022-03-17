@@ -30,11 +30,12 @@
   }
 
   &__title {
-    position: absolute;
+    position: relative;
     z-index: 2;
-  }
-  &__title--heading {
     margin-top: 137px;
+  }
+
+  &__title--heading {
     margin-bottom: 24px;
     font-size: 26px;
     line-height: 1.145;
@@ -69,5 +70,88 @@
 
   .btn--mobile-open-burger {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 37px;
+    // background-repeat: no-repeat;
+    background-position: top 31px right 137px, 0;
+    background-image: url(../images/tablet-circle324x322.svg),
+      linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+    &__container {
+      height: 100%;
+    }
+
+    &__title {
+      //   position: absolute;
+      //   z-index: 2;
+      margin-top: 15px;
+    }
+
+    &__title--heading {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.145;
+      // letter-spacing: 0.04em;
+      // color: var(--light-color);
+    }
+
+    &__title--heading-accent {
+      font-size: 34px;
+      line-height: 0.905;
+      // color: var(--accent-color);
+    }
+
+    &__photo-ice-cream {
+      // position: absolute;
+      right: 32.16%;
+      // bottom: 0;
+    }
+
+    .container {
+      padding: 0 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 37px;
+    // background-repeat: no-repeat;
+    background-position: top 31px right 137px, 0;
+    background-image: url(../images/tablet-circle324x322.svg),
+      linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+    // &__title {
+    //   position: absolute;
+    //   z-index: 2;
+    // }
+    &__title--heading {
+      margin-top: 171px;
+      margin-bottom: 25px;
+      font-size: 38px;
+      line-height: 1.158;
+      // letter-spacing: 0.04em;
+      // color: var(--light-color);
+    }
+
+    &__title--heading-accent {
+      font-size: 58px;
+      line-height: 0.897;
+      // color: var(--accent-color);
+    }
+
+    &__photo-ice-cream {
+      // position: absolute;
+      right: 35.16%;
+      // bottom: 0;
+    }
+
+    .container {
+      padding: 0 46px;
+    }
   }
 }
