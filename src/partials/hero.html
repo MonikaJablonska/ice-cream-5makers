@@ -1,12 +1,73 @@
 <header class="hero">
-  <div class="hero__container">
-    <h1 class="hero__heading">
-      <div>ice cream</div>
-      <div>made with</div>
-      <div class="hero__heading-accent">passion</div>
-    </h1>
-    <!-- <div class="hero__content"></div>
-    <h1 class="hero__heading"></h1> -->
-    <a class="btn hero__btn-light" href="#about">How it’s made?</a>
+  <div class="container hero__container">
+    <nav class="hero__navigation-menu">
+      <!-- logo -->
+
+      <picture>
+        <source srcset="images/logo199x50.png 1x, images/logo199x50@2x.png 2x" />
+        <img src="images/logo199x50.png" width="199" height="50" alt="Logo" />
+      </picture>
+
+      <!-- burger-menu-btn -->
+
+      <button class="hero__burger-menu-btn" type="button">
+        <svg class="hero__burger-menu-icon">
+          <use href="images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- title -->
+
+    <div class="hero__title">
+      <h1 class="hero__title--heading">
+        <div>ice cream</div>
+        <div>made with</div>
+        <div class="hero__title--heading-accent">passion</div>
+      </h1>
+      <div class="hero__content"></div>
+      <h1 class="hero__heading-title"></h1>
+
+      <!-- buttons -->
+
+      <a class="link btn btn--accent" href="#products">Products</a>
+      <a class="link btn btn--light" href="#about">How it's made?</a>
+    </div>
+
+    <!-- photos -->
+
+    <div>
+      <picture class="hero__photo-ice-cream">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            images/desktop-big-ice-cream236x557.png    1x,
+            images/desktop-big-ice-cream236x557@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/tablet-big-ice-cream143x336.png    1x,
+            images/tablet-big-ice-cream143x336@2x.png 2x
+          "
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            images/mobile-big-ice-cream171x410.png    1x,
+            images/mobile-big-ice-cream171x410@2x.png 2x
+          "
+        />
+
+        <img
+          class="hero__photo-ice-cream"
+          src="images/mobile-big-ice-cream171x410.png"
+          alt="Big ice-cream"
+        />
+      </picture>
+    </div>
   </div>
 </header>
