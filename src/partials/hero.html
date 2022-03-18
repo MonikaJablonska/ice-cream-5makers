@@ -15,6 +15,10 @@
           <use href="images/icons.svg#icon-Burger"></use>
         </svg>
       </button>
+
+      <!-- buy-now-btn -->
+
+      <button class="btn btn__buy-now">Buy now</button>
     </nav>
 
     <!-- title -->
@@ -31,6 +35,33 @@
     </div>
 
     <!-- photos -->
+
+    <div class="hero__jar-wrapper">
+      <picture class="hero__photo-jar">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            images/desktop-jar-of-milk188x191.png    1x,
+            images/desktop-jar-of-milk188x191@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/tablet-jar-of-milk124x126.png    1x,
+            images/tablet-jar-of-milk124x126@2x.png 2x
+          "
+        />
+
+        <img src="images/tablet-jar-of-milk124x126.png" alt="Jar of milk" />
+      </picture>
+
+      <div class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </div>
+    </div>
 
     <div>
       <picture class="hero__photo-ice-cream">
@@ -58,12 +89,26 @@
           "
         />
 
-        <img
-          class="hero__photo-ice-cream"
-          src="images/mobile-big-ice-cream171x410.png"
-          alt="Big ice-cream"
-        />
+        <img src="images/mobile-big-ice-cream171x410.png" alt="Big ice-cream" />
       </picture>
     </div>
+    <picture class="hero__photo-girl">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/desktop-gilr-eating-ice-cream293x232.png    1x,
+          images/desktop-gilr-eating-ice-cream293x232@2x.png 2x
+        "
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/tablet-gilr-eating-ice-cream168x133.png    1x,
+          images/tablet-gilr-eating-ice-cream168x133@2x.png 2x
+        "
+      />
+      <img src="images/tablet-gilr-eating-ice-cream168x133.png" alt="Big ice-cream" />
+    </picture>
   </div>
 </header>

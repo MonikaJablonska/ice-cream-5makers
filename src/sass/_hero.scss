@@ -51,8 +51,19 @@
 
   &__photo-ice-cream {
     position: absolute;
-    right: 10%;
+    // right: 10%;
+    right: 32px;
     bottom: 0;
+  }
+
+  &__photo-girl,
+  &__text,
+  &__photo-jar {
+    display: none;
+  }
+
+  .btn__buy-now {
+    display: none;
   }
 
   .btn--accent {
@@ -82,7 +93,7 @@
       linear-gradient(var(--background-dark-color), var(--background-dark-color));
 
     &__container {
-      height: 100%;
+      max-height: 362px;
     }
 
     &__title {
@@ -105,10 +116,44 @@
       // color: var(--accent-color);
     }
 
+    &__jar-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__photo-ice-cream {
-      // position: absolute;
-      right: 32.16%;
-      // bottom: 0;
+      position: absolute;
+      // right: 32.16%;
+      right: 247px;
+      bottom: 0;
+    }
+
+    &__photo-girl {
+      display: block;
+      position: absolute;
+      right: 34px;
+      // top: 266px;
+      bottom: 0;
+    }
+
+    &__photo-jar {
+      display: block;
+      position: absolute;
+      left: 34px;
+      bottom: 28px;
+    }
+
+    &__text {
+      display: block;
+      position: absolute;
+      bottom: 59px;
+      left: 154px;
+      width: 114px;
+      min-height: 48px;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--light-color);
     }
 
     .container {
@@ -151,7 +196,8 @@
     }
 
     .container {
-      padding: 0 46px;
+      max-width: 1200px;
+      margin: auto;
     }
   }
 }
