@@ -122,7 +122,7 @@ a {
 }
 
 .contacts__icon--light-theme {
-  stroke: #d41342;
+  stroke: var(--accent-color);
 }
 
 .contacts__item {
@@ -203,7 +203,7 @@ a {
   font-size: 16px;
   line-height: 1.313;
   text-transform: capitalize;
-  background-color: #d41342;
+  background-color: var(--accent-color);
   color: var(--light-color);
   width: 161px;
   height: 44px;
@@ -219,7 +219,7 @@ a {
 
 .contacts__btn--light-theme {
   background-color: var(--light-color);
-  color: #d41342;
+  color: var(--accent-color);
 }
 
 .contacts__btn:hover,
