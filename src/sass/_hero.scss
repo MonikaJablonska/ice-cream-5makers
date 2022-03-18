@@ -1,7 +1,73 @@
 .hero {
-  &__heading {
-    font-family: 'Titan One', cursive;
-    text-transform: uppercase;
+  padding-top: 6px;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 75px, 0;
+  background-image: url(../images/mobile-circle346x344.svg),
+    linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+  &__container {
+    height: 100vh;
+    position: relative;
+  }
+
+  &__navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__burger-menu-btn {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+  }
+
+  &__burger-menu-icon {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 12px;
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 2;
+  }
+  &__title--heading {
+    margin-top: 137px;
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+  }
+
+  &__title--heading-accent {
+    font-size: 48px;
+    line-height: 0.965;
     color: var(--accent-color);
+  }
+
+  &__photo-ice-cream {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+  }
+
+  .btn--accent {
+    margin-right: 8px;
+    padding: 8px 14px;
+    color: var(--light-color);
+    background-color: var(--accent-color);
+  }
+
+  .btn--light {
+    padding: 8px 14px;
+    color: var(--accent-color);
+    background-color: var(--light-color);
+  }
+
+  .btn--mobile-open-burger {
+    margin-top: 60px;
   }
 }
