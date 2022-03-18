@@ -1,0 +1,19 @@
+.advantages {
+    background-color: var(--background-light-color);
+    padding-top: 39px;
+    padding-bottom: 139px;
+
+    &__list {
+        margin-left: 115px;
+        list-style-type: none;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
+    }
+   &__item {
+
+
+    }  
+}
