@@ -1,0 +1,77 @@
+.about {
+    background-color: var(--background-light-color);
+    &__title--label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.166;
+        padding-top: 125px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-color);
+
+            }
+    &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    padding-top: 15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+            }
+    &__bg--main-theme {
+    width: 280px;
+    height: 279px;
+    padding-top: 26px;
+    align-items: center;
+    background-image: url(../images/about-bg-main_theme.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    }
+    &__description--dark-theme {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    padding: 46px 50px 0px 50px;
+    text-align: start;
+    font-size: 12px;
+    line-height: 162%;
+    color: var(--text-dark-color);
+    }
+    &__description--grey-theme {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    padding: 47px 50px 0px 50px;
+    text-align: start;
+    font-size: 12px;
+    line-height: 162%;
+    color: var(--text-light-color);
+    }
+    &__btn {
+    width: 176px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--accent-color);
+    background: var(--light-color);
+    border-radius: 22px;
+    }
+    &__bg--secound-theme {
+    width: 320px;
+    height: 133px;
+    padding-top: 0px;
+    align-items: center;
+    background-image: url(../images/about-bg-secound_theme.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    }
+}
