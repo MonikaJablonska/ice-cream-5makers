@@ -1,4 +1,10 @@
 .contacts {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-color) 6%,
+    var(--background-light-color) 6%,
+    var(--background-light-color) 100%
+  );
   &__header {
     display: none;
   }
@@ -159,6 +165,12 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-color) 10%,
+      var(--background-light-color) 10%,
+      var(--background-light-color) 100%
+    );
     &__list {
       flex-direction: row;
     }
@@ -233,7 +245,7 @@
     position: relative;
 
     &::after {
-      width: 179px;
+      width: 157px;
       top: -30px;
     }
   }
@@ -253,8 +265,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
+    background-image: linear-gradient(
+      to bottom,
+      var(--light-color) 10%,
+      var(--background-light-color) 10%,
+      var(--background-light-color) 100%
+    );
     &__title {
       margin-bottom: 32px;
     }
