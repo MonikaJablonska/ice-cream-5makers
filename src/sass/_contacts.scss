@@ -12,19 +12,16 @@
 
   &__place {
     text-transform: capitalize;
-    font-weight: 500;
     line-height: 1.833;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
   }
 
   &__days {
-    font-weight: 500;
     line-height: 1.833;
   }
 
   &__time {
-    font-weight: 500;
     line-height: 1.833;
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -69,7 +66,6 @@
   background-color: var(--background-cafe-color);
   color: var(--light-color);
   text-transform: uppercase;
-  font-weight: 500;
   line-height: 1.833;
   letter-spacing: 0.04em;
   margin-bottom: 25px;
@@ -81,7 +77,6 @@
 }
 
 .contacts__text {
-  font-weight: 500;
   color: var(--text-light-color);
   line-height: 1.5;
   margin-bottom: 50px;
@@ -100,7 +95,6 @@
 
 .contacts__phone-number,
 .contacts__email {
-  font-weight: 500;
   line-height: 1.5;
   color: var(--text-light-color);
 }
@@ -152,6 +146,15 @@
 .contacts__btn--light-theme:hover,
 .contacts__btn--light-theme:focus {
   background-color: #ecebeb;
+}
+
+.modal {
+  &-title {
+    color: var(--accent-color);
+  }
+  &-body {
+    background-color: var(--background-light-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
