@@ -1,0 +1,19 @@
+.gallery {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(
+        to bottom,
+        var(--background-light-color) 40%,
+        var(--light-color) 60%
+    );
+
+    &__img {
+        width: 100%;
+        position: absolute;
+    }
+
+    &__content {
+        height: 430px;
+    }
+}
