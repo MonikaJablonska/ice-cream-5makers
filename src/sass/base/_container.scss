@@ -2,6 +2,7 @@
   width: 100%;
   min-width: 320px;
   padding: 0 20px;
+  margin: auto;
 
   .contacts & {
     display: flex;
@@ -12,13 +13,8 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    .contacts & {
-      padding: 0 34px;
-    }
-    .footer & {
-      padding: 0 34px;
-    }
+    width: 768px;
+    padding: 0 34px;
   }
 }
 
@@ -26,15 +22,8 @@
   .container {
     width: 1050px;
     padding: 0;
-
-    // there is no need to have padding 100px
+    // there is no need to have padding at all :)
     // because I have set container width to 1050px and that is "0" point
     // for other sections on 1280px break point.
-    .contacts & {
-      padding: 0;
-    }
-    .footer & {
-      padding: 0;
-    }
   }
 }
