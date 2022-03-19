@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+  }
+  .contacts {
     background-image: linear-gradient(
       to bottom,
       var(--light-color) 6%,
@@ -17,7 +19,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contacts .container {
+  .container {
+    padding: 0 34px;
+  }
+  .contacts {
     background-image: linear-gradient(
       to bottom,
       var(--light-color) 10%,
@@ -28,7 +33,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts .container {
+  .container {
+    width: 1050px;
+    padding: 0;
+  }
+  .contacts {
     background-image: linear-gradient(
       to bottom,
       var(--light-color) 10%,
