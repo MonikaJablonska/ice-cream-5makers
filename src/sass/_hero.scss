@@ -57,6 +57,30 @@
     color: var(--accent-color);
   }
 
+  &__btn-buy-now {
+    padding: 11.5px 37.23px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.313;
+    // text-align: right;
+    color: var(--accent-color);
+    background-color: var(--light-color);
+
+    &:hover,
+    &:focus {
+      // outline: 2px solid var(--accent-color);
+      color: var(--accent-color);
+      background-color: var(--btn-light-hover-color);
+    }
+  }
+
+  &__btn-buy-now-icon {
+    margin-top: 7px;
+    margin-left: 12px;
+    width: 6px;
+    height: 8px;
+  }
+
   &__photo-ice-cream {
     position: absolute;
     // right: 10%;
@@ -129,29 +153,8 @@
 
     &__btn-buy-now {
       display: block;
-      padding: 11.5px 37.23px;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.313;
-      // text-align: right;
-      color: var(--accent-color);
-      background-color: var(--light-color);
-
-      &:hover,
-      &:focus {
-        // outline: 2px solid var(--accent-color);
-        color: var(--accent-color);
-        background-color: var(--btn-light-hover-color);
-      }
     }
-
-    &__btn-buy-now-icon {
-      margin-top: 7px;
-      margin-left: 12px;
-      width: 6px;
-      height: 8px;
-    }
-
+    
     &__list {
       display: block;
       position: absolute;
