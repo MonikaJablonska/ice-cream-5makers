@@ -1,5 +1,10 @@
 .about {
     background-color: var(--background-light-color);
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+    }
     &__title--label {
         font-style: normal;
         font-weight: 400;
@@ -64,6 +69,7 @@
     color: var(--accent-color);
     background: var(--light-color);
     border-radius: 22px;
+    cursor: pointer;
     }
     &__bg--secound-theme {
     width: 320px;
@@ -74,4 +80,5 @@
     background-repeat: no-repeat;
     background-position: center 0;
     }
+    
 }
