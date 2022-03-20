@@ -1,7 +1,337 @@
 .hero {
-  &__heading {
-    font-family: 'Titan One', cursive;
-    text-transform: uppercase;
+  // padding-top: 6px;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 75px, 0;
+  background-image: url(../images/mobile-circle346x344.svg),
+    linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+  &__container {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  &__navigation-menu {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__burger-menu-btn {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+  }
+
+  &__burger-menu-icon {
+    // display: block;
+    // margin: 0 auto;
+    width: 20px;
+    height: 12px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    margin-top: 137px;
+  }
+
+  &__title--heading {
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+  }
+
+  &__title--heading-accent {
+    font-size: 48px;
+    line-height: 0.965;
     color: var(--accent-color);
+  }
+
+  &__photo-ice-cream {
+    position: absolute;
+    // right: 10%;
+    right: 32px;
+    bottom: 0;
+  }
+
+  &__btn-buy-now,
+  &__photo-girl,
+  &__text-wrapper,
+  &__photo-jar,
+  &__list,
+  &__navigation-list {
+    display: none;
+  }
+
+  .btn--accent {
+    margin-right: 8px;
+    padding: 8px 14px;
+    color: var(--light-color);
+    background-color: var(--accent-color);
+  }
+
+  .btn--light {
+    padding: 8px 14px;
+    color: var(--accent-color);
+    background-color: var(--light-color);
+  }
+
+  .btn--mobile-open-burger {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    // padding-top: 37px;
+    // background-repeat: no-repeat;
+    background-position: top 31px right 137px, 0;
+    background-image: url(../images/tablet-circle324x322.svg),
+      linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+    &__container {
+      max-height: 399px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 37px;
+      left: 34px;
+    }
+
+    &__navigation-menu {
+      padding-top: 38px;
+    }
+
+    &__burger-menu-btn {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
+    &__btn-buy-now {
+      display: block;
+      padding: 11.5px 37.23px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.313;
+      // text-align: right;
+      color: var(--accent-color);
+      background-color: var(--light-color);
+    }
+
+    &__btn-buy-now-icon {
+      margin-top: 7px;
+      margin-left: 12px;
+      width: 6px;
+      height: 8px;
+    }
+
+    &__list {
+      display: block;
+      position: absolute;
+      right: 34px;
+    }
+
+    &__list-number,
+    &__list-text {
+      margin-right: 10px;
+      font-weight: 400;
+      text-align: right;
+    }
+
+    &__list-number {
+      font-family: 'Titan One', cursive;
+      margin-top: 21px;
+      position: relative;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.143;
+      letter-spacing: 0.04em;
+      color: var(--accent-color);
+    }
+
+    &__list-number::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -2px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--light-color);
+      z-index: -1;
+    }
+
+    &__list-text {
+      margin-top: 2px;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.25;
+
+      color: var(--light-color);
+    }
+
+    &__title {
+      //   position: absolute;
+      //   z-index: 2;
+      margin-top: 15px;
+    }
+
+    &__title--heading {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.145;
+      // letter-spacing: 0.04em;
+      // color: var(--light-color);
+    }
+
+    &__title--heading-accent {
+      font-size: 34px;
+      line-height: 0.905;
+      // color: var(--accent-color);
+    }
+
+    &__jar-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__photo-ice-cream {
+      position: absolute;
+      // right: 32.16%;
+      right: 247px;
+      bottom: 0;
+    }
+
+    &__photo-girl {
+      display: block;
+      position: absolute;
+      right: 34px;
+      // top: 266px;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &__photo-jar {
+      display: block;
+      position: absolute;
+      left: 34px;
+      bottom: 28px;
+    }
+
+    &__text-wrapper {
+      display: block;
+      position: absolute;
+      bottom: 34px;
+      left: 154px;
+    }
+
+    &__text {
+      margin-bottom: 7px;
+      width: 114px;
+      min-height: 48px;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--light-color);
+    }
+
+    &__btn-arrow {
+      display: block;
+      border-radius: 50%;
+      color: var(--accent-color);
+      background-color: var(--light-color);
+    }
+
+    &__btn-arrow-icon {
+      width: 6px;
+      height: 8px;
+    }
+
+    .container {
+      padding: 0 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 37px;
+    // background-repeat: no-repeat;
+    background-position: top 31px right 137px, 0;
+    background-image: url(../images/tablet-circle324x322.svg),
+      linear-gradient(var(--background-dark-color), var(--background-dark-color));
+
+    // &__title {
+    //   position: absolute;
+    //   z-index: 2;
+    // }
+    &__title--heading {
+      margin-top: 171px;
+      margin-bottom: 25px;
+      font-size: 38px;
+      line-height: 1.158;
+      // letter-spacing: 0.04em;
+      // color: var(--light-color);
+    }
+
+    &__title--heading-accent {
+      font-size: 58px;
+      line-height: 0.897;
+      // color: var(--accent-color);
+    }
+
+    &__photo-ice-cream {
+      // position: absolute;
+      right: 35.16%;
+      // bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    &__navigation-menu {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 110px;
+    }
+
+    &__navigation-list {
+      display: flex;
+      text-align: center;
+      justify-items: flex-end;
+      justify-content: space-between;
+      gap: 35px;
+      color: var(--light-color);
+    }
+
+    &__navigation-link {
+      // text-decoration: none;
+      font-size: 16px;
+      line-height: 1.313;
+    }
+
+    &__burger-menu-btn {
+      display: none;
+    }
   }
 }

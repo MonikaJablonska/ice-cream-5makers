@@ -7,33 +7,30 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 6%,
-      var(--background-light-color) 6%,
-      var(--background-light-color) 100%
-    );
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts .container {
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 10%,
-      var(--background-light-color) 10%,
-      var(--background-light-color) 100%
-    );
+  .container {
+    max-width: 768px;
+    .contacts & {
+      padding: 0 34px;
+    }
+    .footer & {
+      padding: 0 34px;
+    }
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts .container {
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 10%,
-      var(--background-light-color) 10%,
-      var(--background-light-color) 100%
-    );
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    .contacts & {
+      padding: 0 100px;
+      
+    }
+    .footer & {
+      padding: 0 100px;
+    }
   }
 }
