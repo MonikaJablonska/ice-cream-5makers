@@ -47,12 +47,17 @@ a {
 // repeat from a, maybe not necessary
 .link {
   text-decoration: none;
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+  }
 }
 
 .link:hover,
 .link:focus,
-.link-active {
-  color: var(--accent);
+.link.link-active {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .btn {
@@ -63,4 +68,8 @@ a {
   border: none;
   border-radius: 20px;
   // cursor: pointer;
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+  }
 }
