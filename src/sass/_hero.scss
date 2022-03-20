@@ -2,7 +2,7 @@
   background-color: var(--background-dark-color);
 
   &__container {
-    height: 100vh;
+    min-height: 502px;
     position: relative;
     background-position: right 0 bottom 75px;
     background-image: url(../images/mobile-circle346x344.svg);
@@ -131,7 +131,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     &__container {
-      max-height: 399px;
+      min-height: 399px;
       background-position: top 31px right 137px;
       background-image: url(../images/tablet-circle324x322.svg);
     }
@@ -287,7 +287,7 @@
     &__container {
       max-width: 1200px;
       margin: auto;
-      max-height: 665px;
+      min-height: 665px;
       background-position: top 52px right 152px;
       background-image: url(../images/desktop-circle538x538.svg);
     }
