@@ -5,7 +5,7 @@
     min-height: 502px;
     position: relative;
     background-position: right 0 bottom 75px;
-    background-image: url(../images/mobile-circle346x344.svg);
+    background-image: url(../images/hero/background/mobile-circle346x344.svg);
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -133,7 +133,7 @@
     &__container {
       min-height: 399px;
       background-position: top 31px right 137px;
-      background-image: url(../images/tablet-circle324x322.svg);
+      background-image: url(../images/hero/background/tablet-circle324x322.svg);
     }
 
     &__logo {
@@ -154,7 +154,7 @@
     &__btn-buy-now {
       display: block;
     }
-    
+
     &__list {
       display: block;
       position: absolute;
@@ -294,7 +294,7 @@
       margin: auto;
       min-height: 665px;
       background-position: top 52px right 152px;
-      background-image: url(../images/desktop-circle538x538.svg);
+      background-image: url(../images/hero/background/desktop-circle538x538.svg);
     }
 
     &__logo {
@@ -386,7 +386,7 @@
     }
 
     &__photo-girl {
-      right: 0px;
+      right: 0;
     }
 
     &__photo-jar {
