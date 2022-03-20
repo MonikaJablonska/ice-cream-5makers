@@ -1,4 +1,4 @@
-<header class="hero">
+<header class="hero" id="hero">
   <div class="container hero__container">
     <nav class="hero__navigation-menu">
       <!-- logo -->
@@ -30,7 +30,7 @@
 
       <!-- burger-menu-btn -->
 
-      <button class="hero__burger-menu-btn" type="button">
+      <button class="hero__burger-menu-btn" type="button" data-modal-menu-open>
         <svg class="hero__burger-menu-icon">
           <use href="images/icons.svg#icon-Burger"></use>
         </svg>
@@ -38,7 +38,12 @@
 
       <!-- modal-menu -->
 
-      <div class="modal-menu">
+      <div class="modal-menu is-hidden" data-modal-menu>
+        <button class="modal-menu__close-btn" type="button" data-modal-menu-close>
+          <svg class="modal-menu__close-icon">
+            <use href="images/sprite.svg#close"></use>
+          </svg>
+        </button>
         <button class="btn hero__btn-buy-now modal-menu__btn-buy-now">
           Buy now
           <svg class="hero__btn-buy-now-icon">
@@ -46,11 +51,21 @@
           </svg>
         </button>
         <ul class="list modal-menu__list">
-          <li class="modal-menu__item">Home</li>
-          <li class="modal-menu__item">About us</li>
-          <li class="modal-menu__item">How it's made?</li>
-          <li class="modal-menu__item">Our products</li>
-          <li class="modal-menu__item">Contacts</li>
+          <li class="modal-menu__item">
+            <a href="#hero" class="link modal-menu__link">Home</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#about" class="link modal-menu__link">About us</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#advantages" class="link modal-menu__link">How it's made?</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#products" class="link modal-menu__link">Our products</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#contact" class="link modal-menu__link">Contacts</a>
+          </li>
         </ul>
       </div>
 
