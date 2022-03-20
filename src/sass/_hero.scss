@@ -275,6 +275,11 @@
       background-color: var(--light-color);
     }
 
+     &__btn-arrow:hover,
+     &__btn-arrow:focus {
+        color: var(--accent-color);
+     }
+
     &__btn-arrow-icon {
       width: 7px;
       height: 7px;
