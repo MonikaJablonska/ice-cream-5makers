@@ -1,8 +1,14 @@
 .about {
     background-color: var(--background-light-color);
+    background-image: url(../images/about-bg-secound_theme.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     &__container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
     }
     &__title--label {
@@ -35,7 +41,7 @@
     align-items: center;
     background-image: url(../images/about-bg-main_theme.png);
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center;
     }
     &__description--dark-theme {
     font-family: 'DM Sans';
@@ -57,6 +63,10 @@
     line-height: 162%;
     color: var(--text-light-color);
     }
+    &__button--wrapper {
+        width: 320px;
+        padding: 47px 50px 0px 50px;
+    }
     &__btn {
     width: 176px;
     height: 44px;
@@ -73,11 +83,8 @@
     }
     &__bg--secound-theme {
     width: 320px;
-    height: 133px;
-    padding-top: 0px;
     align-items: center;
-    background-image: url(../images/about-bg-secound_theme.png);
-    background-repeat: no-repeat;
+    padding-bottom: 17px;
     background-position: center 0;
     }
     
