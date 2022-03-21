@@ -1,3 +1,193 @@
-<header class="hero">
-  <h1 class="hero__heading">Passion</h1>
+<header class="hero" id="hero">
+  <div class="container hero__container">
+    <nav class="hero__navigation-menu">
+      <!-- logo -->
+
+      <picture class="hero__logo">
+        <source srcset="images/logo199x50.png 1x, images/logo199x50@2x.png 2x" />
+        <img src="images/logo199x50.png" width="199" height="50" alt="Logo" />
+      </picture>
+
+      <!-- navigation-tool -->
+
+      <ul class="list hero__navigation-list">
+        <li>
+          <a class="link hero__navigation-link link-active" href="#hero">Home</a>
+        </li>
+        <li>
+          <a class="link hero__navigation-link" href="#">About us</a>
+        </li>
+        <li>
+          <a class="link hero__navigation-link" href="#about">How it's made?</a>
+        </li>
+        <li>
+          <a class="link hero__navigation-link" href="#products">Our products</a>
+        </li>
+        <li>
+          <a class="link hero__navigation-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- burger-menu-btn -->
+
+      <button class="hero__burger-menu-btn" type="button" data-modal-menu-open>
+        <svg class="hero__burger-menu-icon">
+          <use href="images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <!-- modal-menu -->
+
+      <div class="modal-menu is-hidden" data-modal-menu>
+        <button class="modal-menu__close-btn" type="button" data-modal-menu-close>
+          <svg class="modal-menu__close-icon">
+            <use href="images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <button class="btn hero__btn-buy-now modal-menu__btn-buy-now">
+          Buy now
+          <svg class="hero__btn-buy-now-icon">
+            <use href="images/sprite.svg#majority-sign"></use>
+          </svg>
+        </button>
+        <ul class="list modal-menu__list">
+          <li class="modal-menu__item">
+            <a href="#hero" class="link modal-menu__link">Home</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#" class="link modal-menu__link">About us</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#about" class="link modal-menu__link">How it's made?</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#products" class="link modal-menu__link">Our products</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#contact" class="link modal-menu__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- buy-now-btn -->
+
+      <button class="btn hero__btn-buy-now">
+        Buy now
+        <svg class="hero__btn-buy-now-icon">
+          <use href="images/sprite.svg#majority-sign"></use>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- numbers -->
+
+    <ul class="list hero__list">
+      <li>
+        <div class="hero__list-number">16</div>
+        <p class="hero__list-text">cafes</p>
+      </li>
+      <li>
+        <div class="hero__list-number">23</div>
+        <p class="hero__list-text">food trucks</p>
+      </li>
+    </ul>
+
+    <!-- title -->
+
+    <div class="hero__title">
+      <h1 class="hero__title--heading">
+        <div>ice cream</div>
+        <div>made with</div>
+        <div class="hero__title--heading-accent">passion</div>
+      </h1>
+
+      <!-- buttons -->
+
+      <a class="link btn hero__btn hero__btn--accent" href="#products">Products</a>
+      <a class="link btn hero__btn hero__btn--light" href="#about">How it's made?</a>
+    </div>
+
+    <!-- photos -->
+
+    <div class="hero__jar-wrapper">
+      <picture class="hero__photo-jar">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            images/hero/desktop-jar-of-milk188x191.png    1x,
+            images/hero/desktop-jar-of-milk188x191@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/hero/tablet-jar-of-milk124x126.png    1x,
+            images/hero/tablet-jar-of-milk124x126@2x.png 2x
+          "
+        />
+
+        <img src="images/hero/tablet-jar-of-milk124x126.png" alt="Jar of milk" />
+      </picture>
+      <div class="hero__text-wrapper">
+        <div class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </div>
+        <button class="btn hero__btn-arrow" type="button">
+          <svg class="hero__btn-arrow-icon">
+            <use href="images/sprite.svg#majority-sign"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <picture class="hero__photo-ice-cream">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            images/hero/desktop-big-ice-cream236x557.png    1x,
+            images/hero/desktop-big-ice-cream236x557@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/hero/tablet-big-ice-cream143x336.png    1x,
+            images/hero/tablet-big-ice-cream143x336@2x.png 2x
+          "
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            images/hero/mobile-big-ice-cream171x410.png    1x,
+            images/hero/mobile-big-ice-cream171x410@2x.png 2x
+          "
+        />
+
+        <img src="images/hero/mobile-big-ice-cream171x410.png" alt="Big ice-cream" />
+      </picture>
+    </div>
+    <picture class="hero__photo-girl">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/hero/desktop-girl-eating-ice-cream293x232.png    1x,
+          images/hero/desktop-girl-eating-ice-cream293x232@2x.png 2x
+        "
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/tablet-girl-eating-ice-cream168x133.png    1x,
+          images/hero/tablet-girl-eating-ice-cream168x133@2x.png 2x
+        "
+      />
+      <img src="images/hero/tablet-girl-eating-ice-cream168x133.png" alt="Big ice-cream" />
+    </picture>
+  </div>
 </header>

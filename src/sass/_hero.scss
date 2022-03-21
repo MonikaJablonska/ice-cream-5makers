@@ -1,7 +1,410 @@
 .hero {
-  &__heading {
-    font-family: 'Titan One', cursive;
-    text-transform: uppercase;
+  background-color: var(--background-dark-color);
+
+  &__container {
+    min-height: 502px;
+    position: relative;
+    background-position: right 0 bottom 75px;
+    background-image: url(../images/hero/background/mobile-circle346x344.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  &__navigation-menu {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__burger-menu-btn {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+  }
+
+  &__burger-menu-icon {
+    width: 20px;
+    height: 12px;
+  }
+
+  &__title {
+    position: relative;
+    top: 137px;
+    z-index: 2;
+  }
+
+  &__title--heading {
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+  }
+
+  &__title--heading-accent {
+    font-size: 48px;
+    line-height: 0.965;
     color: var(--accent-color);
+  }
+
+  &__btn-buy-now {
+    padding: 11.5px 37.23px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.313;
+    color: var(--accent-color);
+    background-color: var(--light-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      background-color: var(--btn-light-hover-color);
+    }
+  }
+
+  &__btn-buy-now-icon {
+    margin-top: 7px;
+    margin-left: 12px;
+    width: 6px;
+    height: 8px;
+  }
+
+  &__photo-ice-cream {
+    position: absolute;
+    right: 32px;
+    bottom: 0;
+  }
+
+  &__btn-buy-now,
+  &__photo-girl,
+  &__text-wrapper,
+  &__photo-jar,
+  &__list,
+  &__navigation-list {
+    display: none;
+  }
+
+  &__btn {
+    padding: 8px 14px;
+  }
+
+  &__btn--accent {
+    margin-right: 8px;
+    color: var(--light-color);
+    background-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      color: var(--light-color);
+      background-color: var(--btn-accent-hover-color);
+    }
+  }
+
+  &__btn--light {
+    color: var(--accent-color);
+    background-color: var(--light-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-light-hover-color);
+    }
+  }
+
+  .btn--mobile-open-burger {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__container {
+      min-height: 399px;
+      background-position: top 31px right 137px;
+      background-image: url(../images/hero/background/tablet-circle324x322.svg);
+    }
+
+    &__logo {
+      position: absolute;
+      top: 37px;
+      left: 34px;
+    }
+
+    &__navigation-menu {
+      padding-top: 38px;
+    }
+
+    &__burger-menu-btn {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
+    &__btn-buy-now {
+      display: block;
+    }
+
+    &__list {
+      display: block;
+      position: absolute;
+      right: 34px;
+    }
+
+    &__list-number,
+    &__list-text {
+      margin-right: 10px;
+      font-weight: 400;
+      text-align: right;
+    }
+
+    &__list-number {
+      font-family: 'Titan One', cursive;
+      margin-top: 21px;
+      position: relative;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.143;
+      letter-spacing: 0.04em;
+      color: var(--accent-color);
+    }
+
+    &__list-number::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -2px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--light-color);
+      z-index: -1;
+    }
+
+    &__list-text {
+      margin-top: 2px;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.25;
+
+      color: var(--light-color);
+    }
+
+    &__title {
+      top: 15px;
+    }
+
+    &__title--heading {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.136;
+    }
+
+    &__title--heading-accent {
+      font-size: 34px;
+      line-height: 0.912;
+    }
+
+    &__jar-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__photo-ice-cream {
+      position: absolute;
+      right: 247px;
+    }
+
+    &__photo-girl {
+      display: block;
+      position: absolute;
+      right: 34px;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &__photo-jar {
+      display: block;
+      position: absolute;
+      left: 34px;
+      bottom: 28px;
+    }
+
+    &__text-wrapper {
+      display: block;
+      position: absolute;
+      bottom: 34px;
+      left: 154px;
+    }
+
+    &__text {
+      margin-bottom: 7px;
+      width: 114px;
+      min-height: 48px;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--light-color);
+    }
+
+    &__btn-arrow {
+      display: block;
+      padding: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      text-align: center;
+      color: var(--accent-color);
+      background-color: var(--light-color);
+    }
+
+     &__btn-arrow:hover,
+     &__btn-arrow:focus {
+        color: var(--accent-color);
+     }
+
+    &__btn-arrow-icon {
+      width: 7px;
+      height: 7px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    &__container {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 665px;
+      background-position: top 52px right 152px;
+      background-image: url(../images/hero/background/desktop-circle538x538.svg);
+    }
+
+    &__logo {
+      position: absolute;
+      top: 37px;
+      left: -69px;
+    }
+
+    &__navigation-menu {
+      position: relative;
+      padding-top: 38px;
+      gap: 110px;
+      z-index: 3;
+    }
+
+    &__navigation-list {
+      display: flex;
+      text-align: center;
+      justify-items: flex-end;
+      justify-content: space-between;
+      gap: 35px;
+      color: var(--light-color);
+    }
+
+    &__navigation-link {
+      font-size: 16px;
+      line-height: 1.313;
+      color: var(--light-color);
+    }
+
+    &__burger-menu-btn {
+      display: none;
+    }
+
+    &__list {
+      margin-top: 53px;
+      right: -10px;
+    }
+
+    &__list-number {
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 1.152;
+    }
+
+    &__list-number::after {
+      top: -4px;
+      right: -11px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__list-text {
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.286;
+    }
+
+    &__title {
+      position: absolute;
+      top: 171px;
+    }
+
+    &__title--heading {
+      margin-bottom: 25px;
+      font-size: 38px;
+      line-height: 1.159;
+    }
+
+    &__title--heading-accent {
+      font-size: 58px;
+      line-height: 0.897;
+    }
+
+    &__btn {
+      padding: 11px 21px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
+
+    &__photo-ice-cream {
+      right: 335px;
+    }
+
+    &__photo-girl {
+      right: 0;
+    }
+
+    &__photo-jar {
+      left: -38px;
+      bottom: 45px;
+    }
+
+    &__text-wrapper {
+      bottom: 56px;
+      left: 180px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      width: 200px;
+      min-height: 78px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.429;
+      color: var(--light-color);
+    }
+
+    &__btn-arrow {
+      display: block;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      color: var(--accent-color);
+      background-color: var(--light-color);
+    }
+
+    &__btn-arrow-icon {
+      width: 6px;
+      height: 8px;
+    }
   }
 }

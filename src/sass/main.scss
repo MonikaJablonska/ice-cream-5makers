@@ -5,9 +5,12 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
-@import './variables';
-@import './setup';
+@import './base/variables';
+@import './base/setup';
+@import './base/container';
+
 @import './hero';
+@import './modal_menu';
 @import './products';
 @import './about';
 @import './advantages';
@@ -16,4 +19,3 @@
 @import './contacts';
 @import './footer';
 
-@import './base/container'
