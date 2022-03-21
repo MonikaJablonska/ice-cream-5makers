@@ -2,10 +2,10 @@
   background-color: var(--background-dark-color);
 
   &__container {
-    height: 100vh;
+    min-height: 502px;
     position: relative;
     background-position: right 0 bottom 75px;
-    background-image: url(../images/mobile-circle346x344.svg);
+    background-image: url(../images/hero/background/mobile-circle346x344.svg);
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -31,8 +31,6 @@
   }
 
   &__burger-menu-icon {
-    // display: block;
-    // margin: 0 auto;
     width: 20px;
     height: 12px;
   }
@@ -62,13 +60,11 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.313;
-    // text-align: right;
     color: var(--accent-color);
     background-color: var(--light-color);
 
     &:hover,
     &:focus {
-      // outline: 2px solid var(--accent-color);
       color: var(--accent-color);
       background-color: var(--btn-light-hover-color);
     }
@@ -83,7 +79,6 @@
 
   &__photo-ice-cream {
     position: absolute;
-    // right: 10%;
     right: 32px;
     bottom: 0;
   }
@@ -131,9 +126,9 @@
 @media screen and (min-width: 768px) {
   .hero {
     &__container {
-      max-height: 399px;
+      min-height: 399px;
       background-position: top 31px right 137px;
-      background-image: url(../images/tablet-circle324x322.svg);
+      background-image: url(../images/hero/background/tablet-circle324x322.svg);
     }
 
     &__logo {
@@ -154,7 +149,7 @@
     &__btn-buy-now {
       display: block;
     }
-    
+
     &__list {
       display: block;
       position: absolute;
@@ -209,14 +204,11 @@
       margin-bottom: 20px;
       font-size: 22px;
       line-height: 1.136;
-      // letter-spacing: 0.04em;
-      // color: var(--light-color);
     }
 
     &__title--heading-accent {
       font-size: 34px;
       line-height: 0.912;
-      // color: var(--accent-color);
     }
 
     &__jar-wrapper {
@@ -226,16 +218,13 @@
 
     &__photo-ice-cream {
       position: absolute;
-      // right: 32.16%;
       right: 247px;
-      bottom: 0;
     }
 
     &__photo-girl {
       display: block;
       position: absolute;
       right: 34px;
-      // top: 266px;
       bottom: 0;
       z-index: -1;
     }
@@ -275,6 +264,11 @@
       background-color: var(--light-color);
     }
 
+     &__btn-arrow:hover,
+     &__btn-arrow:focus {
+        color: var(--accent-color);
+     }
+
     &__btn-arrow-icon {
       width: 7px;
       height: 7px;
@@ -282,14 +276,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero {
     &__container {
       max-width: 1200px;
       margin: auto;
-      max-height: 665px;
+      min-height: 665px;
       background-position: top 52px right 152px;
-      background-image: url(../images/desktop-circle538x538.svg);
+      background-image: url(../images/hero/background/desktop-circle538x538.svg);
     }
 
     &__logo {
@@ -300,7 +294,6 @@
 
     &__navigation-menu {
       position: relative;
-      // margin-right: 69px;
       padding-top: 38px;
       gap: 110px;
       z-index: 3;
@@ -353,21 +346,17 @@
     &__title {
       position: absolute;
       top: 171px;
-      // left: 115px;
     }
 
     &__title--heading {
       margin-bottom: 25px;
       font-size: 38px;
       line-height: 1.159;
-      // letter-spacing: 0.04em;
-      // color: var(--light-color);
     }
 
     &__title--heading-accent {
       font-size: 58px;
       line-height: 0.897;
-      // color: var(--accent-color);
     }
 
     &__btn {
@@ -381,7 +370,7 @@
     }
 
     &__photo-girl {
-      right: 0px;
+      right: 0;
     }
 
     &__photo-jar {

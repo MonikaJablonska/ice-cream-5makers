@@ -12,16 +12,16 @@
 
       <ul class="list hero__navigation-list">
         <li>
-          <a class="link hero__navigation-link link-active" href="home">Home</a>
+          <a class="link hero__navigation-link link-active" href="#hero">Home</a>
         </li>
         <li>
-          <a class="link hero__navigation-link" href="about-us">About us</a>
+          <a class="link hero__navigation-link" href="#">About us</a>
         </li>
         <li>
-          <a class="link hero__navigation-link" href="#how it's made">How it's made?</a>
+          <a class="link hero__navigation-link" href="#about">How it's made?</a>
         </li>
         <li>
-          <a class="link hero__navigation-link" href="#our-products">Our products</a>
+          <a class="link hero__navigation-link" href="#products">Our products</a>
         </li>
         <li>
           <a class="link hero__navigation-link" href="#contact">Contact</a>
@@ -32,7 +32,7 @@
 
       <button class="hero__burger-menu-btn" type="button" data-modal-menu-open>
         <svg class="hero__burger-menu-icon">
-          <use href="images/icons.svg#icon-Burger"></use>
+          <use href="images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
 
@@ -55,10 +55,10 @@
             <a href="#hero" class="link modal-menu__link">Home</a>
           </li>
           <li class="modal-menu__item">
-            <a href="#about" class="link modal-menu__link">About us</a>
+            <a href="#" class="link modal-menu__link">About us</a>
           </li>
           <li class="modal-menu__item">
-            <a href="#advantages" class="link modal-menu__link">How it's made?</a>
+            <a href="#about" class="link modal-menu__link">How it's made?</a>
           </li>
           <li class="modal-menu__item">
             <a href="#products" class="link modal-menu__link">Our products</a>
@@ -73,7 +73,9 @@
 
       <button class="btn hero__btn-buy-now">
         Buy now
-        <svg class="hero__btn-buy-now-icon"><use href="images/sprite.svg#majority-sign"></use></svg>
+        <svg class="hero__btn-buy-now-icon">
+          <use href="images/sprite.svg#majority-sign"></use>
+        </svg>
       </button>
     </nav>
 
@@ -110,22 +112,22 @@
     <div class="hero__jar-wrapper">
       <picture class="hero__photo-jar">
         <source
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
           srcset="
-            images/desktop-jar-of-milk188x191.png    1x,
-            images/desktop-jar-of-milk188x191@2x.png 2x
+            images/hero/desktop-jar-of-milk188x191.png    1x,
+            images/hero/desktop-jar-of-milk188x191@2x.png 2x
           "
         />
 
         <source
           media="(min-width: 768px)"
           srcset="
-            images/tablet-jar-of-milk124x126.png    1x,
-            images/tablet-jar-of-milk124x126@2x.png 2x
+            images/hero/tablet-jar-of-milk124x126.png    1x,
+            images/hero/tablet-jar-of-milk124x126@2x.png 2x
           "
         />
 
-        <img src="images/tablet-jar-of-milk124x126.png" alt="Jar of milk" />
+        <img src="images/hero/tablet-jar-of-milk124x126.png" alt="Jar of milk" />
       </picture>
       <div class="hero__text-wrapper">
         <div class="hero__text">
@@ -143,49 +145,49 @@
     <div>
       <picture class="hero__photo-ice-cream">
         <source
-          media="(min-width: 1200px)"
+          media="(min-width: 1280px)"
           srcset="
-            images/desktop-big-ice-cream236x557.png    1x,
-            images/desktop-big-ice-cream236x557@2x.png 2x
+            images/hero/desktop-big-ice-cream236x557.png    1x,
+            images/hero/desktop-big-ice-cream236x557@2x.png 2x
           "
         />
 
         <source
           media="(min-width: 768px)"
           srcset="
-            images/tablet-big-ice-cream143x336.png    1x,
-            images/tablet-big-ice-cream143x336@2x.png 2x
+            images/hero/tablet-big-ice-cream143x336.png    1x,
+            images/hero/tablet-big-ice-cream143x336@2x.png 2x
           "
         />
 
         <source
           media="(max-width: 767px)"
           srcset="
-            images/mobile-big-ice-cream171x410.png    1x,
-            images/mobile-big-ice-cream171x410@2x.png 2x
+            images/hero/mobile-big-ice-cream171x410.png    1x,
+            images/hero/mobile-big-ice-cream171x410@2x.png 2x
           "
         />
 
-        <img src="images/mobile-big-ice-cream171x410.png" alt="Big ice-cream" />
+        <img src="images/hero/mobile-big-ice-cream171x410.png" alt="Big ice-cream" />
       </picture>
     </div>
     <picture class="hero__photo-girl">
       <source
-        media="(min-width: 1200px)"
+        media="(min-width: 1280px)"
         srcset="
-          images/desktop-gilr-eating-ice-cream293x232.png    1x,
-          images/desktop-gilr-eating-ice-cream293x232@2x.png 2x
+          images/hero/desktop-girl-eating-ice-cream293x232.png    1x,
+          images/hero/desktop-girl-eating-ice-cream293x232@2x.png 2x
         "
       />
 
       <source
         media="(min-width: 768px)"
         srcset="
-          images/tablet-gilr-eating-ice-cream168x133.png    1x,
-          images/tablet-gilr-eating-ice-cream168x133@2x.png 2x
+          images/hero/tablet-girl-eating-ice-cream168x133.png    1x,
+          images/hero/tablet-girl-eating-ice-cream168x133@2x.png 2x
         "
       />
-      <img src="images/tablet-gilr-eating-ice-cream168x133.png" alt="Big ice-cream" />
+      <img src="images/hero/tablet-girl-eating-ice-cream168x133.png" alt="Big ice-cream" />
     </picture>
   </div>
 </header>
