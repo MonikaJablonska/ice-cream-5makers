@@ -1,7 +1,6 @@
 .advantages {
   background-color: var(--background-light-color);
   padding-top: 39px;
-  padding-bottom: 139px;
 
   &__header {
     display: none;
@@ -43,6 +42,8 @@
 
 @media screen and (min-width: 320px) {
   .advantages {
+    padding-bottom: 97px;
+
     &__list {
       grid-template-columns: repeat(auto-fit, minmax(230px, auto));
     }
@@ -69,6 +70,8 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
+    padding-bottom: 140px;
+
     &__list {
       grid-template-columns: repeat(auto-fit, minmax(180px, auto));
       gap: 60px;
@@ -94,7 +97,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages {
     &__list {
       grid-template-columns: repeat(auto-fit, minmax(230px, auto));

@@ -2,38 +2,28 @@
   width: 100%;
   min-width: 320px;
   padding: 0 20px;
+  margin: auto;
 
   .contacts & {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 6%,
-      var(--background-light-color) 6%,
-      var(--background-light-color) 100%
-    );
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts .container {
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 10%,
-      var(--background-light-color) 10%,
-      var(--background-light-color) 100%
-    );
+  .container {
+    width: 768px;
+    padding: 0 34px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts .container {
-    background-image: linear-gradient(
-      to bottom,
-      var(--light-color) 10%,
-      var(--background-light-color) 10%,
-      var(--background-light-color) 100%
-    );
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1050px;
+    padding: 0;
+    // there is no need to have padding at all :)
+    // because I have set container width to 1050px and that is "0" point
+    // for other sections on 1280px break point.
   }
 }

@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contact">
   <div class="container">
     <h2 class="contacts__header">Contacts</h2>
 
@@ -51,8 +51,64 @@
       </li>
     </ul>
     <div class="contacts__buttons">
-      <button class="contacts__btn">Our Locations</button>
-      <button class="contacts__btn contacts__btn--light-theme">Franchise</button>
+      <button
+        class="contacts__btn"
+        type="button"
+        data-toggle="modal"
+        data-target="#myModal"
+        data-lat="41.84"
+        data-lng="-87.70"
+      >
+        Our Locations<svg class="contacts__icon">
+          <use href="../src/images/sprite.svg#majority-sign"></use>
+        </svg>
+      </button>
+      <button
+        class="contacts__btn contacts__btn--light-theme"
+        type="button"
+        data-toggle="modal"
+        data-target="#myModal"
+        data-lat="34.03"
+        data-lng="-118.31"
+      >
+        Franchise<svg class="contacts__icon contacts__icon--light-theme">
+          <use href="../src/images/sprite.svg#majority-sign"></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Our Location</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12 modal_body_content">
+                <p>Visit Us At:</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 modal_body_map">
+                <div class="location-map" id="location-map">
+                  <div style="width: 600px; height: 400px" id="map_canvas"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 modal_body_end">
+                <p>See You Again!!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
