@@ -1,12 +1,13 @@
 .gallery {
     position: relative;
+    margin: 0;
     background-image: linear-gradient(
         to bottom,
-        var(--background-light-color) 32.5%,
-        var(--light-color) 32.5%,
-        var(--light-color) 675%,
+        var(--background-light-color) 15%,
+        var(--light-color) 15%,
+        var(--light-color) 85%,
     );
-    
+
     &__img {
         width: 100%;
     }
