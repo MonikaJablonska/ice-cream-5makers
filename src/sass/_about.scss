@@ -80,7 +80,14 @@
     background: var(--light-color);
     border-radius: 22px;
     cursor: pointer;
+    &__btn--arrow-icon {
+        margin-top: 7px;
+        margin-left: 12px;
+        width: 6px;
+        height: 8px;
     }
+    }
+    
     &__bg--secound-theme {
     width: 320px;
     align-items: center;
