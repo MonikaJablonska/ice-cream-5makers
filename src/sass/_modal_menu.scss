@@ -5,7 +5,13 @@
   width: 250px;
   height: 100vh;
   background-color: var(--background-modal-menu-color);
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out, visibility 500ms ease-in-out;
   z-index: 3;
+
+  &.is-hidden {
+    transform: translateX(250px);
+  }
 
   &__btn-buy-now {
     display: block;
@@ -60,6 +66,10 @@
     &__close-btn {
       right: 34px;
     }
+
+    &.is-hidden {
+      transform: translateX(254px);
+    }
   }
 }
 
@@ -70,5 +80,5 @@
 }
 
 .is-hidden {
-  display: none;
+  visibility: hidden;
 }
