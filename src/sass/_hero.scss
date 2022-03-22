@@ -264,14 +264,14 @@
       background-color: var(--light-color);
     }
 
-     &__btn-arrow:hover,
-     &__btn-arrow:focus {
-        color: var(--accent-color);
-     }
+    &__btn-arrow:hover,
+    &__btn-arrow:focus {
+      color: var(--accent-color);
+    }
 
     &__btn-arrow-icon {
-      width: 7px;
-      height: 7px;
+      width: 18px;
+      height: 18px;
     }
   }
 }
@@ -403,8 +403,8 @@
     }
 
     &__btn-arrow-icon {
-      width: 6px;
-      height: 8px;
+      width: 26px;
+      height: 26px;
     }
   }
 }
