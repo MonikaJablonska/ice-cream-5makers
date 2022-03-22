@@ -89,3 +89,26 @@
     }
     
 }
+
+@media screen and (min-width: 768px) {
+    .about {
+        background-image: none;
+        &__bg {
+        display: flex;
+        flex-direction: row;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+    .about {
+    background-image: url(../images/about-bg-secound_theme.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    }
+}
