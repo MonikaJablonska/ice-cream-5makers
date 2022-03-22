@@ -1,16 +1,14 @@
 .gallery {
     position: relative;
-    margin-right: auto;
-    margin-left: auto;
     background-image: linear-gradient(
         to bottom,
-        var(--background-light-color) 40%,
-        var(--light-color) 60%
+        var(--background-light-color) 32.333%,
+        var(--light-color) 32.333%,
+        var(--light-color) 67.666%,
     );
-
+    
     &__img {
         width: 100%;
-        position: absolute;
     }
 }
 
@@ -19,7 +17,7 @@
         &__content {
             height: 122px;
             margin-bottom: 80px;
-            padding: 0;
+            
         }
     }
 }
@@ -29,7 +27,7 @@
         &__content {
             height: 264px;
             margin-bottom: 121px;
-            padding: 0;
+            
         }
     }
 }
@@ -39,7 +37,7 @@
         &__content {
             height: 430px;
             margin-bottom: 123px;
-            display: inline-block;
+            
         }
     }
 }
