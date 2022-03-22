@@ -1,7 +1,7 @@
 .gallery {
     position: relative;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
     background-image: linear-gradient(
         to bottom,
         var(--background-light-color) 40%,
@@ -18,7 +18,9 @@
     .gallery {
         &__content {
             height: 122px;
+            margin-left: 0;
             margin-bottom: 80px;
+            padding: 0;
         }
     }
 }
@@ -27,7 +29,9 @@
     .gallery {
         &__content {
             height: 264px;
+            margin-left: 0;
             margin-bottom: 121px;
+            padding: 0;
         }
     }
 }
@@ -36,6 +40,7 @@
     .gallery {
         &__content {
             height: 430px;
+            margin-left: 0;
             margin-bottom: 123px;
         }
     }
