@@ -1,6 +1,6 @@
 .about {
     background-color: var(--background-light-color);
-    background-image: url(../images/about-bg-secound_theme.png);
+    background-image: url(../images/about-bg-secound_theme_a.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -63,7 +63,7 @@
     line-height: 162%;
     color: var(--text-light-color);
     }
-    &__button--wrapper {
+    &__btn--wrapper {
         width: 320px;
         padding: 47px 50px 0px 50px;
     }
@@ -80,6 +80,18 @@
     background: var(--light-color);
     border-radius: 22px;
     cursor: pointer;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      background-color: var(--btn-light-hover-color);
+    }
+    }
+
+    &__btn--arrow-icon {
+        margin-top: 7px;
+        margin-left: 12px;
+        width: 6px;
+        height: 8px;
     }
     &__bg--secound-theme {
     width: 320px;
@@ -87,8 +99,9 @@
     padding-bottom: 17px;
     background-position: center 0;
     }
-    
 }
+
+
 
 @media screen and (min-width: 768px) {
     .about {
@@ -97,7 +110,23 @@
         display: flex;
         flex-direction: row;
         }
+        &__bg--main-theme {
+            max-width: 340px;
+        }
+        &__description--dark-theme {
+           max-width: 340px;
+           padding: 46px 50px 0px 17px;
+        }
+        &__description--grey-theme {
+            max-width: 340px;
+           padding: 46px 50px 0px 17px;
+        }
     }
+    // &__description--dark-theme {
+    // }
+    // &__description--grey-theme {
+    
+    // }
 
 }
 
@@ -110,5 +139,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    &__description--dark-theme {
+           max-width: 340px;
+           padding: 46px 50px 0px 74px;
+        }
+        &__description--grey-theme {
+            max-width: 340px;
+           padding: 46px 50px 0px 74px;
+        }
     }
+    
 }
