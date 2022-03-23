@@ -1,47 +1,56 @@
 .gallery {
-    position: relative;
-    margin-right: auto;
-    margin-left: 0;
-    background-image: linear-gradient(
-        to bottom,
-        var(--background-light-color) 40%,
-        var(--light-color) 60%
-    );
-
-    &__img {
-        width: 100%;
-        position: absolute;
-    }
+  &__img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) {
-    .gallery {
-        &__content {
-            height: 122px;
-            margin-left: 0;
-            margin-bottom: 80px;
-            padding: 0;
-        }
+  .gallery {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-light-color) 39.3442623%,
+      var(--light-color) 39.3442623%,
+      var(--light-color) 60.6557377%
+    );
+    &__content {
+      padding: 0;
+      width: 364px;
+      height: 122px;
+      margin-bottom: 80px;
     }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .gallery {
-        &__content {
-            height: 264px;
-            margin-left: 0;
-            margin-bottom: 121px;
-            padding: 0;
-        }
+  .gallery {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-light-color) 40.1515152%,
+      var(--light-color) 40.1515152%,
+      var(--light-color) 59,
+      8484848%
+    );
+    &__content {
+      padding: 0;
+      width: 786px;
+      height: 264px;
+      margin-bottom: 121px;
     }
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .gallery {
-        &__content {
-            height: 430px;
-            margin-left: 0;
-            margin-bottom: 123px;
-        }
+  .gallery {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-light-color) 39.7674419%,
+      var(--light-color) 39.7674419%,
+      var(--light-color) 60.2325581%
+    );
+    &__content {
+      width: 1280px;
+      height: 430px;
+      margin-bottom: 123px;
     }
+  }
 }
