@@ -44,10 +44,6 @@
   .advantages {
     padding-bottom: 97px;
 
-    &__list {
-      grid-template-columns: repeat(auto-fit, minmax(230px, auto));
-    }
-
     &__item {
       max-width: 230px;
     }
@@ -70,11 +66,13 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
+
     padding-bottom: 140px;
 
     &__list {
       grid-template-columns: repeat(auto-fit, minmax(180px, auto));
       gap: 60px;
+      display: flex;
     }
 
     &__item {
