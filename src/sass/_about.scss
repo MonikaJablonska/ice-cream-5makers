@@ -1,9 +1,9 @@
 .about {
     background-color: var(--background-light-color);
-    background-image: url(../images/about-bg-secound_theme.png);
-  
+    background-image: url(../images/about-bg-secound_theme_a.png);
+    background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     &__container {
         display: flex;
         flex-direction: column;
@@ -113,10 +113,20 @@
         &__bg--main-theme {
             max-width: 340px;
         }
-        &__bg--secound-theme {
-           max-width: 340px; 
+        &__description--dark-theme {
+           max-width: 340px;
+           padding: 46px 50px 0px 17px;
+        }
+        &__description--grey-theme {
+            max-width: 340px;
+           padding: 46px 50px 0px 17px;
         }
     }
+    // &__description--dark-theme {
+    // }
+    // &__description--grey-theme {
+    
+    // }
 
 }
 
@@ -129,5 +139,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    &__description--dark-theme {
+           max-width: 340px;
+           padding: 46px 50px 0px 74px;
+        }
+        &__description--grey-theme {
+            max-width: 340px;
+           padding: 46px 50px 0px 74px;
+        }
     }
+    
 }
