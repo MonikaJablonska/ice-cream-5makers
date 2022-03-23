@@ -1,36 +1,31 @@
 .gallery {
-    background: linear-gradient(180deg,#fff5f6 29.5%,#fff 0);
-    padding-bottom: 80px;
-   
+  background: linear-gradient(180deg, #fff5f6 29.5%, #fff 0);
+  padding-bottom: 80px;
 
-    &__img {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  &__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .gallery {
-      padding-bottom: 121px;
+  .gallery {
+    padding-bottom: 121px;
 
     &__img {
-        justify-content: center;
+      justify-content: center;
     }
   }
 }
 
-
 @media screen and (min-width: 1280px) {
-    .gallery {
-        
- 
-      padding-bottom: 123px;
-    
-    &__img {
-        display: flex;
-        justify-content: center;
-        }
-  }
+  .gallery {
+    padding-bottom: 123px;
 
+    &__img {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
